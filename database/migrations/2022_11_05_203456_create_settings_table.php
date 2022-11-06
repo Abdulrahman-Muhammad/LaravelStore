@@ -14,7 +14,18 @@ return new class extends Migration
     public function up()
     {
         Schema::create('settings', function (Blueprint $table) {
-            $table->id();
+            $table->increments("id");
+            $table->string("title");
+            $table->string("description");
+            $table->string("address");
+            $table->string("phone");
+            $table->string("logo");
+            $table->string("favicon");
+            $table->string("facebook");
+            $table->string("twitter");
+            $table->string("instagram");
+            $table->string("youtube");
+            $table->string("email");
             $table->timestamps();
         });
     }
