@@ -15,9 +15,10 @@ return new class extends Migration
     {
         Schema::create('product_images', function (Blueprint $table) {
             $table->increments("id");
-            $table->integer("product_color_size_id")->unsigned();
+            $table->integer("product_size_color_id")->unsigned();
 
-            $table->foreign("product_color_size_id")->references("id")->on("product_size_color");
+            $table->foreign("product_size_color_id")->references("id")->on("product_size_color");
+            $table->string('image');
             $table->timestamps();
         });
     }
