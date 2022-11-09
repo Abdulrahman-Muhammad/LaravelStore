@@ -24,24 +24,24 @@
 
 
     <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard') }}/assets/css/vendors/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard')}}/assets/css/vendors/font-awesome.css">
 
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard') }}/assets/css/vendors/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard')}}/assets/css/vendors/themify-icons.css">
 
     <!-- slick icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard') }}/assets/css/vendors/slick.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard') }}/assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard')}}/assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard')}}/assets/css/vendors/slick-theme.css">
 
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard') }}/assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard')}}/assets/css/vendors/bootstrap.css">
 
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard') }}/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard')}}/assets/css/style.css">
 
 </head>
 
-<body class="rtl">
+<body class="ltr">
     <div id="app">
         <main class="py-4">
             @yield('content')
@@ -50,27 +50,27 @@
 
 
     <!-- latest jquery-->
-    <script src="{{ asset('dashboard') }}/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/jquery-3.3.1.min.js"></script>
 
     <!-- Bootstrap js-->
-    <script src="{{ asset('dashboard') }}/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- feather icon js-->
-    <script src="{{ asset('dashboard') }}/assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="{{ asset('dashboard') }}/assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/icons/feather-icon/feather-icon.js"></script>
 
     <!-- Sidebar jquery-->
-    <script src="{{ asset('dashboard') }}/assets/js/sidebar-menu.js"></script>
-    <script src="{{ asset('dashboard') }}/assets/js/slick.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/sidebar-menu.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/slick.js"></script>
 
     <!-- lazyload js-->
-    <script src="{{ asset('dashboard') }}/assets/js/lazysizes.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/lazysizes.min.js"></script>
 
     <!--right sidebar js-->
-    <script src="{{ asset('dashboard') }}/assets/js/chat-menu.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/chat-menu.js"></script>
 
     <!--script admin-->
-    <script src="{{ asset('dashboard') }}/assets/js/admin-script.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/admin-script.js"></script>
     <script>
         $('.single-item').slick({
             arrows: false,
@@ -78,5 +78,4 @@
         });
     </script>
 </body>
-
 </html>
