@@ -37,4 +37,16 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    // overRide the redirect function  RouteServiceProvider::HOME; make it redirect to another route on the login action
+
+    public function redirectTo()
+    {
+        if (auth()->user()->type == 'admin') {
+            // redirect()->route('dashboard');
+            dd('admin');
+        }
+
+        redirect()->route('index');
+    }
 }
